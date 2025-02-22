@@ -1,0 +1,1787 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@500" />
+  <meta charset="UTF-8" />
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="x-apple-disable-message-reformatting" />
+  <style>
+    .home-standards-block {
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: center;
+      min-width: 1920px;
+      padding: 50px;
+      background: url("assets/image_2103a1e6.png") 50% / cover no-repeat;
+      border-radius: 20px;
+    }
+
+    .quality-standards-section {
+      flex: 0 0 auto;
+    }
+
+    .majestic-heading1 {
+      padding: 0;
+      margin: 0;
+      font: 500 96px/80px Manrope, sans-serif;
+      color: white;
+      text-align: left;
+      letter-spacing: -1.92px;
+      margin-top: 40px;
+    }
+
+    .majestic-heading {
+      font: 500 96px/80px Manrope, sans-serif;
+      color: rgba(255, 255, 255, 0.5);
+      text-align: left;
+      letter-spacing: -1.92px;
+    }
+
+    .high-quality-standards-text-style {
+      padding: 0;
+      margin: 0;
+      margin-top: 35px;
+      font: 500 18px TT Travels;
+      color: white;
+      text-align: left;
+      letter-spacing: -0.36px;
+    }
+
+    .home-construction-info-block {
+      flex: 0 0 auto;
+      margin-top: 5px;
+      padding-left: 30px;
+    }
+
+    .card-button {
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 201px;
+      min-width: 201px;
+      height: 89px;
+      font: 600 20px TT Travels;
+      color: white;
+      cursor: pointer;
+      background: #392e45;
+      border: none;
+      border-radius: 15px;
+      text-align: center;
+    }
+
+    .brand-statement {
+      box-sizing: border-box;
+      max-width: 377px;
+      padding: 0;
+      margin: 0;
+      margin-top: 150px;
+      font: 500 24px TT Travels;
+      color: white;
+      text-align: left;
+      letter-spacing: -0.48px;
+    }
+
+    .flex-row-design-section-bloc {
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: row;
+      gap: 8px;
+      align-items: flex-end;
+      justify-content: space-between;
+      min-width: 1675px;
+    }
+
+    .project-details-section {
+      box-sizing: border-box;
+      flex: 0 0 auto;
+      min-width: 651px;
+    }
+
+    .project-details-container {
+      box-sizing: border-box;
+      width: 100%;
+    }
+
+    .majestic-heading {
+      box-sizing: border-box;
+      max-width: 591px;
+      padding: 0;
+      margin: 0;
+      font: 500 72px/75px Manrope, sans-serif;
+      color: black;
+      text-align: left;
+      letter-spacing: -1.44px;
+    }
+
+    .project-details-text-style {
+      box-sizing: border-box;
+      max-width: 606px;
+      padding: 0;
+      margin: 0;
+      margin-top: 26px;
+      font: 500 22px TT Travels;
+      color: #949494;
+      text-align: left;
+      letter-spacing: -0.44px;
+    }
+
+    .flex-row-with-images {
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: row;
+      gap: 8px;
+      align-items: flex-start;
+      justify-content: space-between;
+      width: 100%;
+      margin-top: 199px;
+    }
+
+    .facade-solutions-section {
+      box-sizing: border-box;
+      flex: 0 0 auto;
+      max-width: 275px;
+    }
+
+    .facade-solution-card1 {
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: center;
+      width: 78px;
+      height: 78px;
+      padding-right: 15px;
+      padding-left: 15px;
+      background: white;
+      border-radius: 10px;
+    }
+
+    .image-container-style {
+      box-sizing: border-box;
+      display: block;
+      flex: 0 0 auto;
+      max-width: initial;
+      height: 48px;
+      border: none;
+      object-fit: cover;
+    }
+
+    .facade-solution-heading {
+      box-sizing: border-box;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      margin-top: 38px;
+      font: 500 22px/30px TT Travels;
+      color: #949494;
+      text-align: left;
+      letter-spacing: -0.44px;
+    }
+
+    .facade-solution-card {
+      box-sizing: border-box;
+      flex: 0 0 auto;
+      max-width: 266px;
+    }
+
+    .design-section-block3 {
+      box-sizing: border-box;
+      display: flex;
+      flex: 0 0 auto;
+      flex-direction: column;
+      gap: 18px;
+      align-items: stretch;
+      justify-content: center;
+      min-width: 831px;
+      padding-top: 29px;
+    }
+
+    .design-section-block1 {
+      flex: 0 0 auto;
+    }
+
+    .design-section-block {
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      width: 100%;
+      max-width: 831px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      background: white;
+      border-radius: 15px;
+    }
+
+    .design-section-block2 {
+      box-sizing: border-box;
+      display: flex;
+      flex: 0 0 auto;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      width: 31.29%;
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+
+    .design-element-container {
+      box-sizing: border-box;
+      min-width: 230px;
+      padding: 166px 10px 10px;
+      border: none;
+      border-radius: 15px;
+    }
+
+    .center-aligned-text-container {
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: center;
+      height: 42px;
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+
+    .travel-text-snippet {
+      flex: 0 0 auto;
+      padding: 0;
+      margin: 0;
+      font: 400 16px TT Travels;
+      color: black;
+      letter-spacing: -0.32px;
+      white-space: pre-wrap;
+    }
+
+    .design-details-section {
+      box-sizing: border-box;
+      flex: 0 0 auto;
+      width: 68.71%;
+      padding: 15px 87px 23px;
+    }
+
+    .design-section-title {
+      padding: 0;
+      margin: 0;
+      font: 500 38px Manrope, sans-serif;
+      color: black;
+      letter-spacing: -1.14px;
+      white-space: pre-wrap;
+    }
+
+    .project-details-description-text-style {
+      box-sizing: border-box;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      margin-top: 8px;
+      font: 400 24px/30px TT Travels;
+      color: #7d7d7d;
+      text-align: left;
+      letter-spacing: -0.96px;
+      white-space: pre-wrap;
+      hyphens: auto;
+      word-break: break-word;
+    }
+
+    .rapid-quality-section {
+      box-sizing: border-box;
+      margin-top: 100px;
+    }
+
+    .standout-heading {
+      padding: 0;
+      margin: 0;
+      font: 500 48px/45px Manrope, sans-serif;
+      color: black;
+      text-align: left;
+      letter-spacing: -0.96px;
+    }
+
+    .high-quality-text-block {
+      font: 500 48px/45px Manrope, sans-serif;
+      color: rgba(0, 0, 0, 0.6);
+      text-align: left;
+      letter-spacing: -0.96px;
+      padding-top: 50;
+    }
+
+    .feature-box-group {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+      justify-content: flex-start;
+      margin-top: 18px;
+    }
+
+    .quality-standards-section2 {
+      flex: 0 0 auto;
+    }
+
+    .high-quality-standards-paragraph {
+      padding: 0;
+      margin: 0;
+      font: 500 18px TT Travels;
+      color: black;
+      letter-spacing: -0.36px;
+    }
+
+    .quality-standards-section1 {
+      box-sizing: border-box;
+      width: 100%;
+      padding-right: 4.75px;
+      margin-top: 62px;
+    }
+
+    .quality-standards-section3 {
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: flex-end;
+      width: 100%;
+      padding-top: 51px;
+      background: #f1f1f1;
+      border-radius: 25px;
+    }
+
+    .quality-standards-section {
+      box-sizing: border-box;
+      display: flex;
+      flex: 0 0 auto;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: center;
+      max-width: initial;
+      height: 398px;
+      padding: 19px 34px 30px;
+      background: url("blob:https://app.kombai.com/7f5528e0-1ef0-43c6-86c4-f33ea5280a62") 50% / cover no-repeat;
+      border: none;
+    }
+
+    .high-quality-standards-text-style1 {
+      flex: 0 0 auto;
+      padding: 0;
+      margin: 0;
+      font: 500 24px/25px Manrope, sans-serif;
+      color: black;
+      text-align: left;
+      letter-spacing: -0.48px;
+    }
+
+    .high-quality-standards-text-style {
+      font: 500 24px/25px Manrope, sans-serif;
+      color: rgba(0, 0, 0, 0.6);
+      text-align: left;
+      letter-spacing: -0.48px;
+    }
+
+    .feature-box {
+      display: flex;
+      flex: 0 0 auto;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      padding-right: 6px;
+      padding-left: 6px;
+      margin-top: 234px;
+    }
+
+    .center-box {
+      box-sizing: border-box;
+      display: flex;
+      flex: 0 0 auto;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      padding-right: 18px;
+      padding-left: 18px;
+      background: white;
+      border-radius: 10px;
+    }
+
+    .image-container {
+      box-sizing: border-box;
+      display: block;
+      flex: 0 0 auto;
+      max-width: initial;
+      height: 9px;
+      border: none;
+      object-fit: cover;
+    }
+
+    .travel-details-button-text1 {
+      flex: 0 0 auto;
+      padding: 0;
+      margin: 0;
+      margin-left: 6px;
+      font: 500 16px TT Travels;
+      color: white;
+      letter-spacing: -0.32px;
+    }
+
+    .feature-cards-container {
+      display: flex;
+      flex: 0 0 auto;
+      flex-direction: row;
+      align-items: flex-end;
+      justify-content: flex-start;
+      margin-left: 11.5px;
+    }
+
+    .testimonial-section {
+      box-sizing: border-box;
+      flex: 0 0 auto;
+      max-width: initial;
+      height: 499px;
+      padding-top: 50px;
+      padding-right: 225px;
+      padding-left: 39px;
+      background: url("blob:https://app.kombai.com/dff6df10-8d9b-42b2-8cbc-663aa51eda30") 50% / cover no-repeat;
+    }
+
+    .testimonial-text-style {
+      padding: 0;
+      margin: 0;
+      font: 500 24px/25px Manrope, sans-serif;
+      color: black;
+      text-align: left;
+      letter-spacing: -0.48px;
+    }
+
+    .client-satisfaction-section {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      margin-top: 304px;
+    }
+
+    .travel-details-button-text {
+      flex: 0 0 auto;
+      padding: 0;
+      margin: 0;
+      margin-left: 6px;
+      font: 500 16px TT Travels;
+      color: #090909;
+      letter-spacing: -0.32px;
+    }
+
+    .custom-project-section {
+      box-sizing: border-box;
+      display: flex;
+      flex: 0 0 auto;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: center;
+      max-width: initial;
+      height: 451px;
+      padding-right: 212px;
+      padding-left: 35px;
+      margin-left: 12px;
+      background: url("blob:https://app.kombai.com/9007e3fa-92f4-4f51-b933-8f2f0ea13434") 50% / cover no-repeat;
+    }
+
+    .custom-project-heading-style {
+      flex: 0 0 auto;
+      padding: 0;
+      margin: 0;
+      font: 500 24px/25px Manrope, sans-serif;
+      color: white;
+      text-align: left;
+      letter-spacing: -0.48px;
+    }
+
+    .custom-project-style {
+      font: 500 24px/25px Manrope, sans-serif;
+      color: rgba(255, 255, 255, 0.6);
+      text-align: left;
+      letter-spacing: -0.48px;
+    }
+
+    .project-details-container {
+      display: flex;
+      flex: 0 0 auto;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding-right: 5px;
+      padding-left: 5px;
+      margin-top: 246px;
+    }
+
+    .construction-services-section {
+      box-sizing: border-box;
+      flex: 0 0 auto;
+      max-width: initial;
+      height: 529px;
+      padding: 50px 208px 30px 34px;
+      margin-left: 16px;
+      background: url("blob:https://app.kombai.com/7358bd02-b911-4b46-81ce-a24d350da2e5") 50% / cover no-repeat;
+    }
+
+    .construction-details-container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      padding-right: 6px;
+      padding-left: 6px;
+      margin-top: 309px;
+    }
+
+    .rapid-quality-section {
+      box-sizing: border-box;
+      margin-top: 100px;
+    }
+
+    .standout-heading {
+      padding: 0;
+      margin: 0;
+      font: 500 48px/45px Manrope, sans-serif;
+      color: black;
+      text-align: left;
+      letter-spacing: -0.96px;
+    }
+
+    .high-quality-text-block {
+      font: 500 48px/45px Manrope, sans-serif;
+      color: rgba(0, 0, 0, 0.6);
+      text-align: left;
+      letter-spacing: -0.96px;
+    }
+
+    .feature-box-group {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+      justify-content: flex-start;
+      margin-top: 18px;
+    }
+
+    .quality-standards-section2 {
+      flex: 0 0 auto;
+    }
+
+    .high-quality-standards-paragraph {
+      padding: 0;
+      margin: 0;
+      font: 500 18px TT Travels;
+      color: black;
+      letter-spacing: -0.36px;
+    }
+
+    .quality-standards-section1 {
+      box-sizing: border-box;
+      width: 100%;
+      padding-right: 4.75px;
+      margin-top: 62px;
+    }
+
+    .quality-standards-section3 {
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: flex-end;
+      width: 100%;
+      padding-top: 51px;
+      background: #f1f1f1;
+      border-radius: 25px;
+    }
+
+    .quality-standards-section32 {
+      box-sizing: border-box;
+      display: flex;
+      flex: 0 0 auto;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: center;
+      max-width: initial;
+      height: 398px;
+      padding: 19px 34px 30px;
+      background: url("assets/image_97b42716.png") 50% / cover no-repeat;
+      border: none;
+    }
+
+    .high-quality-standards-text-style1 {
+      flex: 0 0 auto;
+      padding: 0;
+      margin: 0;
+      font: 500 24px/25px Manrope, sans-serif;
+      color: black;
+      text-align: left;
+      letter-spacing: -0.48px;
+    }
+
+    .high-quality-standards-text-style {
+      font: 500 24px/25px Manrope, sans-serif;
+      color: rgba(0, 0, 0, 0.6);
+      text-align: left;
+      letter-spacing: -0.48px;
+    }
+
+    .feature-box {
+      display: flex;
+      flex: 0 0 auto;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      padding-right: 6px;
+      padding-left: 6px;
+      margin-top: 234px;
+    }
+
+    .center-box {
+      box-sizing: border-box;
+      display: flex;
+      flex: 0 0 auto;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      padding-right: 18px;
+      padding-left: 18px;
+      background: white;
+      border-radius: 10px;
+    }
+
+    .image-container {
+      box-sizing: border-box;
+      display: block;
+      flex: 0 0 auto;
+      max-width: initial;
+      height: 9px;
+      border: none;
+      object-fit: cover;
+    }
+
+    .travel-details-button-text1 {
+      flex: 0 0 auto;
+      padding: 0;
+      margin: 0;
+      margin-left: 6px;
+      font: 500 16px TT Travels;
+      color: white;
+      letter-spacing: -0.32px;
+    }
+
+    .feature-cards-container {
+      display: flex;
+      flex: 0 0 auto;
+      flex-direction: row;
+      align-items: flex-end;
+      justify-content: flex-start;
+      margin-left: 11.5px;
+    }
+
+    .testimonial-section {
+      box-sizing: border-box;
+      flex: 0 0 auto;
+      max-width: initial;
+      height: 499px;
+      padding-top: 50px;
+      padding-right: 225px;
+      padding-left: 39px;
+      background: url("assets/image_1ff81e9a.png") 50% / cover no-repeat;
+    }
+
+    .testimonial-text-style {
+      padding: 0;
+      margin: 0;
+      font: 500 24px/25px Manrope, sans-serif;
+      color: black;
+      text-align: left;
+      letter-spacing: -0.48px;
+    }
+
+    .client-satisfaction-section {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      margin-top: 304px;
+    }
+
+    .travel-details-button-text {
+      flex: 0 0 auto;
+      padding: 0;
+      margin: 0;
+      margin-left: 6px;
+      font: 500 16px TT Travels;
+      color: #090909;
+      letter-spacing: -0.32px;
+    }
+
+    .custom-project-section {
+      box-sizing: border-box;
+      display: flex;
+      flex: 0 0 auto;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: center;
+      max-width: initial;
+      height: 451px;
+      padding-right: 212px;
+      padding-left: 35px;
+      margin-left: 12px;
+      background: url("assets/image_f4c4340f.png") 50% / cover no-repeat;
+    }
+
+    .custom-project-heading-style {
+      flex: 0 0 auto;
+      padding: 0;
+      margin: 0;
+      font: 500 24px/25px Manrope, sans-serif;
+      color: white;
+      text-align: left;
+      letter-spacing: -0.48px;
+    }
+
+    .custom-project-style {
+      font: 500 24px/25px Manrope, sans-serif;
+      color: rgba(255, 255, 255, 0.6);
+      text-align: left;
+      letter-spacing: -0.48px;
+    }
+
+    .project-details-container-column {
+      display: flex;
+      flex: 0 0 auto;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding-right: 5px;
+      padding-left: 5px;
+      margin-top: 100px;
+    }
+
+    .construction-services-section {
+      box-sizing: border-box;
+      flex: 0 0 auto;
+      max-width: initial;
+      height: 529px;
+      padding: 50px 208px 30px 34px;
+      margin-left: 16px;
+      background: url("assets/image_9c174cdc.png") 50% / cover no-repeat;
+    }
+
+    .construction-details-container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      padding-right: 6px;
+      padding-left: 6px;
+      margin-top: 309px;
+    }
+
+    .quality-standards-section-1 {
+      box-sizing: border-box;
+      display: flex;
+      flex: 0 0 auto;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: center;
+      max-width: initial;
+      height: 398px;
+      padding: 19px 34px 30px;
+      background: url("assets/image_97b42716.png") 50% / cover no-repeat;
+      border: none;
+    }
+
+    .main-content-container {
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: center;
+      min-width: 1920px;
+      padding: 124px 45px 123px;
+      background: #101010;
+      border-radius: 0px 0px 50px 50px;
+    }
+
+    .customer-feedback-container {
+      flex: 0 0 auto;
+    }
+
+    .testimonial-container {
+      box-sizing: border-box;
+      width: 100%;
+    }
+
+    .main-quality-statement {
+      box-sizing: border-box;
+      max-width: 796px;
+      padding: 0;
+      margin: 0;
+      font: 500 48px/45px Manrope, sans-serif;
+      color: white;
+      text-align: left;
+      letter-spacing: -0.96px;
+    }
+
+    .review-button-container {
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      width: 100%;
+      height: 70px;
+      padding-right: 7px;
+      padding-left: 7px;
+      margin-top: 43px;
+      background: #e7e9eb;
+      border-radius: 50px;
+    }
+
+    .primary-button {
+      box-sizing: border-box;
+      display: block;
+      flex: 0 0 auto;
+      width: 200px;
+      min-width: 200px;
+      height: 56px;
+      color: black;
+      cursor: pointer;
+      background: white;
+      border: none;
+      border-radius: 50px;
+    }
+
+    .travel-heading {
+      font: 500 20px TT Travels;
+      letter-spacing: -0.4px;
+    }
+
+    .review-count-badge {
+      font: 600 20px TT Travels;
+      letter-spacing: -0.4px;
+    }
+
+    .review-summary-container {
+      display: flex;
+      flex: 0 0 auto;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      margin-left: 30px;
+    }
+
+    .rating-container1 {
+      display: flex;
+      flex: 0 0 auto;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+    }
+
+    .image-rating-display-style {
+      box-sizing: border-box;
+      display: block;
+      width: 29px;
+      max-width: initial;
+      height: 29px;
+      border: none;
+      object-fit: cover;
+    }
+
+    .rating-text-widget {
+      flex: 0 0 auto;
+      padding: 0;
+      margin: 0;
+      margin-left: 9px;
+      font: 600 22px TT Travels;
+      color: black;
+      letter-spacing: -0.44px;
+    }
+
+    .rating-container {
+      display: flex;
+      flex: 0 0 auto;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      margin-left: 37px;
+    }
+
+    .testimonial-container2 {
+      box-sizing: border-box;
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    .testimonial-heading {
+      padding: 0;
+      margin: 0;
+      font: 500 22px TT Travels;
+      color: white;
+      letter-spacing: -0.44px;
+    }
+
+    .testimonials-container {
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: row;
+      gap: 23px;
+      align-items: flex-start;
+      justify-content: space-between;
+      width: 100%;
+      margin-top: 26px;
+    }
+
+    .testimonial-container1 {
+      box-sizing: border-box;
+      flex: 1 1 0;
+      padding: 44px 26px 52px;
+      background: white;
+      border-radius: 15px;
+    }
+
+    .perfectionist-review {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+
+    .profile-image-circle {
+      box-sizing: border-box;
+      display: block;
+      width: 105px;
+      max-width: initial;
+      height: 105px;
+      border: none;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .profile-card1 {
+      box-sizing: border-box;
+      flex: 0 0 auto;
+      width: 203px;
+      margin-left: 14px;
+    }
+
+    .profile-image-container {
+      box-sizing: border-box;
+      display: block;
+      width: 100%;
+      max-width: initial;
+      height: 36px;
+    }
+
+    .profile-card2 {
+      box-sizing: border-box;
+      width: 100%;
+      margin-top: 11px;
+    }
+
+    .traveler-name-text-style {
+      padding: 0;
+      margin: 0;
+      font: 500 22px TT Travels;
+      color: black;
+      letter-spacing: -0.44px;
+    }
+
+    .traveler-info-text-style {
+      padding: 0;
+      margin: 0;
+      margin-top: 7px;
+      font: 500 20px TT Travels;
+      color: #999999;
+      letter-spacing: -0.4px;
+    }
+
+    .testimonial-text {
+      box-sizing: border-box;
+      max-width: 370px;
+      padding: 0;
+      margin: 0;
+      margin-top: 30px;
+      font: 500 20px TT Travels;
+      color: #373737;
+      text-align: left;
+      letter-spacing: -0.4px;
+    }
+
+    .travel-link-text-style {
+      padding: 0;
+      margin: 0;
+      margin-top: 46px;
+      font: 500 20px TT Travels;
+      color: #7a7a7a;
+      text-decoration-line: underline;
+      letter-spacing: -0.4px;
+    }
+
+    .profile-card {
+      flex: 0 0 auto;
+      margin-left: 14px;
+    }
+
+    .personal-info-container {
+      margin-top: 11px;
+    }
+
+    .trip-link-text-style {
+      padding: 0;
+      margin: 0;
+      margin-top: 22px;
+      font: 500 20px TT Travels;
+      color: #7a7a7a;
+      text-decoration-line: underline;
+      letter-spacing: -0.4px;
+    }
+
+    .central-image-container {
+      flex: 0 0 auto;
+      align-self: center;
+      margin-top: 50px;
+    }
+
+    .text-block-widget {
+      box-sizing: border-box;
+      display: block;
+      width: 51px;
+      max-width: initial;
+      height: 13px;
+    }
+
+    .landing-page {
+      box-sizing: border-box;
+      min-width: 1829px;
+    }
+
+    .landing-page__header {
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      width: 100%;
+    }
+
+    .landing-page__header-title {
+      box-sizing: border-box;
+      flex: 0 0 auto;
+      width: 38.66%;
+      padding: 0;
+      margin: 0;
+      font: 500 20px Manrope, sans-serif;
+      color: grey;
+    }
+
+    .landing-page__header-nav {
+      box-sizing: border-box;
+      display: flex;
+      flex: 0 0 auto;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      width: 61.34%;
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+
+    .landing-page__header-nav-item {
+      flex: 0 0 auto;
+      padding: 0;
+      margin: 0;
+      font: 500 20px Manrope, sans-serif;
+      color: grey;
+    }
+
+    .landing-page__header-nav-item--feedback {
+      margin-left: 430px;
+    }
+
+    .landing-page__content {
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: row;
+      align-items: stretch;
+      justify-content: flex-start;
+      width: 100%;
+      margin-top: 16px;
+    }
+
+    .landing-page__content-left {
+      box-sizing: border-box;
+      flex: 0 0 auto;
+      width: 38.66%;
+    }
+
+    .landing-page__content-left-heading {
+      padding: 0;
+      margin: 0;
+      font: 400 72px Manrope, sans-serif;
+      color: #de845a;
+      text-decoration-line: underline;
+      letter-spacing: -1.44px;
+    }
+
+    .landing-page__content-left-text {
+      padding: 0;
+      margin: 0;
+      margin-top: 147px;
+      font: 500 20px Manrope, sans-serif;
+      color: grey;
+      text-align: left;
+    }
+
+    .landing-page__content-left-button {
+      box-sizing: border-box;
+      display: flex;
+      /* Изменяем на flex для центрирования */
+      align-items: center;
+      /* Вертикальное центрирование */
+      justify-content: center;
+      /* Горизонтальное центрирование */
+      width: 415px;
+      min-width: 415px;
+      height: 119px;
+      margin-top: 49px;
+      font: 600 28px TT Travels;
+      /* 600 - жирный шрифт */
+      color: white;
+      letter-spacing: -0.56px;
+      cursor: pointer;
+      background: #101010;
+      border: none;
+      border-radius: 60px;
+      text-align: center;
+      /* Дополнительное центрирование текста */
+    }
+
+    .landing-page__content-right {
+      box-sizing: border-box;
+      display: flex;
+      flex: 0 0 auto;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: center;
+      width: 53.8%;
+      padding-right: 15px;
+      padding-bottom: 45px;
+      padding-left: 15px;
+    }
+
+    .landing-page__content-right-row {
+      display: flex;
+      flex: 0 0 auto;
+      flex-direction: row;
+      gap: 8px;
+      align-items: center;
+      justify-content: space-between;
+      padding-right: 19.5px;
+    }
+
+    .landing-page__content-right-heading {
+      flex: 0 0 auto;
+      padding: 0;
+      margin: 0;
+      font: 400 72px Manrope, sans-serif;
+      color: #2b65ab;
+      text-decoration-line: underline;
+      letter-spacing: -1.44px;
+    }
+
+    .landing-page__content-right-heading--grey {
+      color: grey;
+    }
+
+    .landing-page__content-right-nav {
+      display: flex;
+      flex: 0 0 auto;
+      flex-direction: row;
+      gap: 158px;
+      align-items: center;
+      justify-content: flex-start;
+      padding-right: 4px;
+      padding-left: 4px;
+      margin-top: 295px;
+    }
+
+    .landing-page__content-right-nav-item {
+      flex: 0 0 auto;
+      padding: 0;
+      margin: 0;
+      font: 500 24px TT Travels;
+      color: #101010;
+    }
+
+    .landing-page__sidebar {
+      box-sizing: border-box;
+      display: flex;
+      flex: 0 0 auto;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: flex-start;
+      width: 7.55%;
+      padding-top: 20px;
+      padding-bottom: 32px;
+      padding-left: 15px;
+    }
+
+    .landing-page__sidebar-container {
+      box-sizing: border-box;
+      display: flex;
+      flex: 0 0 auto;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      width: 64px;
+      background: #101010;
+      border-radius: 10px;
+    }
+
+    .landing-page__sidebar-box {
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: center;
+      width: 28px;
+      height: 64px;
+    }
+
+    .landing-page__sidebar-image {
+      display: block;
+      flex: 0 0 auto;
+      max-width: initial;
+      height: 4px;
+    }
+
+    .landing-page__sidebar-bottom {
+      display: flex;
+      flex: 0 0 auto;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: flex-start;
+      margin-top: 159px;
+    }
+
+    .landing-page__sidebar-bottom-image {
+      flex: 0 0 auto;
+      margin-top: 98px;
+    }
+
+    .landing-page__sidebar-bottom-image img {
+      box-sizing: border-box;
+      display: block;
+      width: 67px;
+      max-width: initial;
+      height: 67px;
+    }
+
+    .modal-toggle {
+      display: none;
+    }
+
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1000;
+    }
+
+    .modal {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1001;
+      width: 90%;
+      max-width: 500px;
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      cursor: pointer;
+      font-size: 24px;
+    }
+
+    .modal-toggle:checked~.modal-overlay,
+    .modal-toggle:checked~.modal {
+      display: block;
+      animation: fadeIn 0.3s;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    /* Стили для модального окна */
+    .modal-toggle {
+      display: none;
+    }
+
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      z-index: 1000;
+    }
+
+    .modal {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1001;
+      width: 90%;
+      max-width: 600px;
+      background: white;
+      border-radius: 15px;
+      padding: 30px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .modal-content {
+      text-align: center;
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      font-size: 24px;
+      cursor: pointer;
+      color: #666;
+    }
+
+    .modal-close:hover {
+      color: #000;
+    }
+
+    h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    p {
+      font-size: 16px;
+      color: #666;
+      margin-bottom: 30px;
+    }
+
+    .question {
+      margin-bottom: 30px;
+      text-align: left;
+    }
+
+    .question h3 {
+      font-size: 20px;
+      color: #333;
+      margin-bottom: 15px;
+    }
+
+    .options {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .option-button {
+      padding: 15px;
+      background: #f0f0f0;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      color: #333;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .option-button:hover {
+      background: #e0e0e0;
+    }
+
+    .card-button:hover {
+      background: #2a2233;
+    }
+
+    /* Показываем модальное окно при активации чекбокса */
+    .modal-toggle:checked~.modal-overlay,
+    .modal-toggle:checked~.modal {
+      display: block;
+      animation: fadeIn 0.3s;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+  <input type="checkbox" id="modal-toggle" class="modal-toggle" hidden>
+  <label for="modal-toggle" class="modal-overlay"></label>
+  <div class="modal">
+    <div class="modal-content">
+      <label for="modal-toggle" class="modal-close">&times;</label>
+      <h2>Какой дом вам подходит?</h2>
+      <p>Ответьте на два вопроса, чтобы узнать, какой дом лучше всего соответствует вашим потребностям.</p>
+
+      <div class="question">
+        <h3>1. Какой размер дома вы предпочитаете?</h3>
+        <div class="options">
+          <button class="option-button">Небольшой дом (до 100 м²)</button>
+          <button class="option-button">Средний дом (100–200 м²)</button>
+          <button class="option-button">Большой дом (более 200 м²)</button>
+        </div>
+      </div>
+
+      <div class="question">
+        <h3>2. Какой стиль дома вам ближе?</h3>
+        <div class="options">
+          <button class="option-button">Современный стиль</button>
+          <button class="option-button">Классический стиль</button>
+          <button class="option-button">Деревянный дом (сруб)</button>
+        </div>
+      </div>
+
+      <label for="modal-toggle" class="card-button">Сохранить</label>
+    </div>
+  </div>
+
+  <div style="display: inline-block; width: 1920px" data-ignore="used only for top most containter width">
+    <div class="home-standards-block">
+      <div class="quality-standards-section">
+        <p class="majestic-heading1">
+          <span>Твой дом<br /></span><span class="majestic-heading">- твои <br />правила</span>
+        </p>
+        <p class="high-quality-standards-text-style">Высокие стандарты качества <br />в строительстве каркасных домов
+        </p>
+      </div>
+      <div class="home-construction-info-block">
+        <label for="modal-toggle" class="card-button">Пройти тест</label>
+        <p class="brand-statement">Занимаемся строительством каркасных домов с 2005 года</p>
+      </div>
+    </div>
+    <div class="flex-row-design-section-bloc">
+      <div class="project-details-section">
+        <div class="project-details-container-column">
+          <p class="majestic-heading">Возьмем на себя проектирование, дизайн и монтаж <br />объекта</p>
+          <p class="project-details-text-style">Наша компания выполнит полный цикл работ, начиная от геодезической
+            съемки объекта, заканчивая отделкой выбранными материалами</p>
+        </div>
+        <div class="flex-row-with-images">
+          <div class="facade-solutions-section">
+            <div class="facade-solution-card1">
+              <img src="assets/image_64607a16.png" class="image-container-style" />
+            </div>
+            <p class="facade-solution-heading">Разработка нестандартных решений для фасада</p>
+          </div>
+          <div class="facade-solution-card">
+            <div class="facade-solution-card1">
+              <img src="assets/image_9af5f7fd.png" class="image-container-style" />
+            </div>
+            <p class="facade-solution-heading">Укомплектуем объект подсистемой, крпежом, материалами</p>
+          </div>
+        </div>
+      </div>
+      <div class="design-section-block3">
+        <div class="design-section-block1">
+          <div class="design-section-block">
+            <div class="design-section-block2">
+              <div class="design-element-container"
+                style="background: url('assets/design_image1.png') 50% / cover no-repeat">
+                <div class="center-aligned-text-container">
+                  <p class="travel-text-snippet">1</p>
+                </div>
+              </div>
+            </div>
+            <div class="design-details-section">
+              <p class="design-section-title">Проектирование</p>
+              <p class="project-details-description-text-style">Подготовим прочностные расчеты, раскладку облицовочного
+                материала, узлы креплений, монтажные схемы, спецификацию и материалы</p>
+            </div>
+          </div>
+        </div>
+        <div class="design-section-block1">
+          <div class="design-section-block">
+            <div class="design-section-block2">
+              <div class="design-element-container"
+                style="background: url('assets/design_image2.png') 50% / cover no-repeat">
+                <div class="center-aligned-text-container">
+                  <p class="travel-text-snippet">2</p>
+                </div>
+              </div>
+            </div>
+            <div class="design-details-section">
+              <p class="design-section-title">Дизайн вентфасадов</p>
+              <p class="project-details-description-text-style">Разработаем концепцию фасада, дизайн проекта и
+                архитектурную визуализацию с разбивами фасада (расстановка панелей, витражей)</p>
+            </div>
+          </div>
+        </div>
+        <div class="design-section-block1">
+          <div class="design-section-block">
+            <div class="design-section-block2">
+              <div class="design-element-container"
+                style="background: url('assets/design_image3.png') 50% / cover no-repeat">
+                <div class="center-aligned-text-container">
+                  <p class="travel-text-snippet">3</p>
+                </div>
+              </div>
+            </div>
+            <div class="design-details-section">
+              <p class="design-section-title">Монтаж вентфасадов</p>
+              <p class="project-details-description-text-style">Работы по утеплению фасада, разметка фасада, монтаж
+                кронштейнов, монтаж направляющих, монтаж выбранного для отделки материала</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="rapid-quality-section">
+      <p class="standout-heading">
+        <span>Быстрые сроки<br /></span><span class="high-quality-text-block">и высокое <br />качество работы</span>
+      </p>
+      <div class="feature-box-group">
+        <div class="quality-standards-section2">
+          <p class="high-quality-standards-paragraph">Заселиться в дом можно сразу после завершения работ</p>
+          <div class="quality-standards-section1">
+            <div class="quality-standards-section3">
+              <div class="quality-standards-section-1">
+                <p class="high-quality-standards-text-style1">
+                  <span>Высокие <br /></span><span class="high-quality-standards-text-style">стандарты
+                    <br />качества</span>
+                </p>
+                <div class="feature-box">
+                  <div class="center-box">
+                    <img src="assets/image_e5ca02e7.png" class="image-container" />
+                  </div>
+                  <p class="travel-details-button-text1">Подробнее</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="feature-cards-container">
+          <div class="testimonial-section">
+            <p class="testimonial-text-style">
+              <span>Более 180 <br /></span><span class="high-quality-standards-text-style">довольных
+                <br />клиентов</span>
+            </p>
+            <div class="client-satisfaction-section">
+              <div class="center-box">
+                <img src="assets/image_e5ca02e7.png" class="image-container" />
+              </div>
+              <p class="travel-details-button-text">Подробнее</p>
+            </div>
+          </div>
+          <div class="custom-project-section">
+            <p class="custom-project-heading-style">
+              <span>Разработаем <br /></span><span class="custom-project-style">индивидуальный <br />проект</span>
+            </p>
+            <div class="project-details-container">
+              <div class="center-box">
+                <img src="assets/image_e5ca02e7.png" class="image-container" />
+              </div>
+              <p class="travel-details-button-text1">Подробнее</p>
+            </div>
+          </div>
+          <div class="construction-services-section">
+            <p class="testimonial-text-style">
+              <span>Строительные <br />бригады <br /></span><span
+                class="high-quality-standards-text-style">разнообразных <br />направлений</span>
+            </p>
+            <div class="construction-details-container">
+              <div class="center-box">
+                <img src="assets/image_e5ca02e7.png" class="image-container" />
+              </div>
+              <p class="travel-details-button-text1">Подробнее</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main-content-container">
+    <div class="customer-feedback-container">
+      <div class="testimonial-container">
+        <p class="main-quality-statement">Главный показатель качества нашей работы - довольный клиент</p>
+        <div class="review-button-container">
+          <!-- Button Component is detected here -->
+          <button class="primary-button"><span class="travel-heading">Все отзывы</span><span class="review-count-badge">
+              185</span></button>
+          <div class="review-summary-container">
+            <div class="rating-container1">
+              <img src="assets/image_be1a4cea.png" class="image-rating-display-style" />
+              <p class="rating-text-widget">4.9</p>
+            </div>
+            <div class="rating-container">
+              <img src="assets/image_52be68b5.png" class="image-rating-display-style" />
+              <p class="rating-text-widget">5</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-container2">
+        <p class="testimonial-heading">185 отзывов из 2 источников</p>
+        <div class="testimonials-container">
+          <div class="testimonial-container1">
+            <div class="testimonial-container">
+              <div class="perfectionist-review">
+                <img src="assets/image_600a9e35.png" class="profile-image-circle" />
+                <div class="profile-card1">
+                  <img src="assets/image_b2a99fb.png" class="profile-image-container" />
+                  <div class="profile-card2">
+                    <p class="traveler-name-text-style">Евгений Лисица</p>
+                    <p class="traveler-info-text-style">24 февраля 2025</p>
+                  </div>
+                </div>
+              </div>
+              <p class="testimonial-text">Для строительства своего третьего дома (2 предыдущих не понравились), выбрал
+                эту компанию. Получилось все очень креативно. Виден опыт и чувство вкуса. При стройке тоже все хорошо, в
+                срок и аккуратно. Мне как перфекционисту все понравилось.</p>
+            </div>
+            <p class="travel-link-text-style">Ссылка на источник</p>
+          </div>
+          <div class="testimonial-container1">
+            <div class="testimonial-container">
+              <div class="perfectionist-review">
+                <img src="assets/image_42bf7995.png" class="profile-image-circle" />
+                <div class="profile-card">
+                  <img src="assets/image_b2a99fb.png" class="profile-image-container" />
+                  <div class="personal-info-container">
+                    <p class="traveler-name-text-style">Борис Константинов</p>
+                    <p class="traveler-info-text-style">24 февраля 2025</p>
+                  </div>
+                </div>
+              </div>
+              <p class="testimonial-text">Очень креативные архитектора, большие спецы в области деревянных конструкций.
+                Огромное спасибо за вашу работу. Могу посоветовать эту компанию тем, кто задумался о строительстве
+                деревянного дома! 👍</p>
+            </div>
+            <p class="travel-link-text-style">Ссылка на источник</p>
+          </div>
+          <div class="testimonial-container1">
+            <div class="perfectionist-review">
+              <img src="assets/image_a0939a75.png" class="profile-image-circle" />
+              <div class="profile-card1">
+                <img src="assets/image_90077a42.png" class="profile-image-container" />
+                <div class="profile-card2">
+                  <p class="traveler-name-text-style">Евгений Конин</p>
+                  <p class="traveler-info-text-style">24 февраля 2025</p>
+                </div>
+              </div>
+            </div>
+            <p class="testimonial-text">Мы получили дом раньше, чем планировали, и это было настоящим приятным
+              сюрпризом! Уже полгода мы живем здесь, и он дарит нам тепло и комфорт. Просторные комнаты и уютная
+              обстановка создают прекрасные условия для жизни. Каждый день мы с радостью возвращаемся в наш новый дом.
+            </p>
+            <p class="trip-link-text-style">Ссылка на источник</p>
+          </div>
+          <div class="testimonial-container1">
+            <div class="perfectionist-review">
+              <img src="assets/image_58ba83fa.png" class="profile-image-circle" />
+              <div class="profile-card1">
+                <img src="assets/image_90077a42.png" class="profile-image-container" />
+                <div class="profile-card2">
+                  <p class="traveler-name-text-style">Сергей Борисов</p>
+                  <p class="traveler-info-text-style">24 февраля 2025</p>
+                </div>
+              </div>
+            </div>
+            <p class="testimonial-text">Сделали нам дом мечты, абсолютно с нуля, проект не из готовых, рисовали по
+              нашему ТЗ можно сказать на пальцах, предложили много крутых современных решений, результат превзошел все
+              наши ожидания! Огромное спасибо за проделанную работу, уложились в обещанные сроки.</p>
+            <p class="trip-link-text-style">Ссылка на источник</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="central-image-container">
+      <img src="assets/image_31dbcb2a.png" class="text-block-widget" />
+    </div>
+  </div>
+  <div class="landing-page">
+    <div class="landing-page__header">
+      <p class="landing-page__header-title">КЛАССИКА</p>
+      <div class="landing-page__header-nav">
+        <p class="landing-page__header-nav-item">ЧАТ</p>
+        <p class="landing-page__header-nav-item landing-page__header-nav-item--feedback">ОБРАТНАЯ СВЯЗЬ</p>
+      </div>
+    </div>
+    <div class="landing-page__content">
+      <div class="landing-page__content-left">
+        <p class="landing-page__content-left-heading">email@example.com</p>
+        <p class="landing-page__content-left-text">ТЗ - ВАШЕ, ИДЕИ - НАШИ,<br />ВОСХИЩЕНИЕ - ВСЕХ ОСТАЛЬНЫХ</p>
+        <label for="modal-toggle" class="landing-page__content-left-button">Пройти тест</label>
+      </div>
+      <div class="landing-page__content-right">
+        <div class="landing-page__content-right-row">
+          <p class="landing-page__content-right-heading">telegram</p>
+          <p class="landing-page__content-right-heading landing-page__content-right-heading--grey">e-mail / номер</p>
+        </div>
+        <div class="landing-page__content-right-nav">
+          <p class="landing-page__content-right-nav-item">Дома</p>
+          <p class="landing-page__content-right-nav-item">Фото</p>
+          <p class="landing-page__content-right-nav-item">О нас</p>
+        </div>
+      </div>
+      <div class="landing-page__sidebar">
+        <div class="landing-page__sidebar-container">
+          <div class="landing-page__sidebar-box">
+            <img src="assets/image_52b3d89a.png" class="landing-page__sidebar-image" />
+          </div>
+        </div>
+        <div class="landing-page__sidebar-bottom">
+          <p class="landing-page__header-nav-item">ВВЕРХ</p>
+          <div class="landing-page__sidebar-bottom-image">
+            <img src="assets/image_a80b9a83.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
