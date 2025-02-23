@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500" />
+
+    <meta charset="UTF-8" />
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <!--[if !mso]><!-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--<![endif]-->
+
+    <meta name="x-apple-disable-message-reformatting" />
+
+    <style>
+      .hero-section {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        min-width: 1920px;
+        padding: 31.5px 30px 70px 22px;
+        background: white;
+      }
+      .main-content-section {
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: row;
+        gap: 540px;
+        align-items: center;
+        align-self: center;
+        justify-content: flex-start;
+        margin-left: 6.5px;
+      }
+      .hero-section1 {
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: flex-start;
+      }
+      .svg-container {
+        display: flex;
+        flex: 0 0 auto;
+        width: 32px;
+        height: 32px;
+        color: #101010;
+      }
+      .main-heading-text-style {
+        flex: 0 0 auto;
+        padding: 0;
+        padding-top: 7.5px;
+        margin: 0;
+        margin-left: 8.5px;
+        font: 800 24px Proxima Nova;
+        color: #101010;
+      }
+      .horizontal-link-group {
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: row;
+        gap: 48px;
+        align-items: center;
+        justify-content: flex-start;
+      }
+      .home-title {
+        flex: 0 0 auto;
+        padding: 0;
+        margin: 0;
+        font: 500 18px TT Travels;
+        color: #101010;
+        text-decoration-line: underline;
+      }
+      .unique-card-info {
+        flex: 0 0 auto;
+        padding: 0;
+        margin: 0;
+        font: 500 18px TT Travels;
+        color: #101010;
+      }
+      .contact-info-heading {
+        flex: 0 0 auto;
+        padding: 0;
+        margin: 0;
+        font: 400 24px TT Travels;
+        color: #101010;
+      }
+      .project-card-container {
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        margin-top: 170px;
+      }
+      .project-info-section {
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: row;
+        gap: 8px;
+        align-items: flex-start;
+        justify-content: space-between;
+      }
+      .project-popularity-section {
+        box-sizing: border-box;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        max-width: 1568px;
+      }
+      .popular-projects-heading-style {
+        flex: 0 0 auto;
+        padding: 0;
+        padding-top: 8px;
+        margin: 0;
+        font: 500 48px/48px Manrope, sans-serif;
+        color: #101010;
+        text-align: left;
+        letter-spacing: -0.96px;
+      }
+      .popular-heading-text-style1 {
+        font: 500 48px/48px Manrope, sans-serif;
+        color: rgba(16, 16, 16, 0.6);
+        text-align: left;
+        letter-spacing: -0.96px;
+      }
+      .construction-info-block {
+        display: flex;
+        flex: 0 1 auto;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin-left: 497px;
+      }
+      .construction-timeline-info {
+        flex: 0 0 auto;
+      }
+      .avatar-image-with-text {
+        box-sizing: border-box;
+        display: block;
+        width: 68px;
+        max-width: initial;
+        height: 68px;
+        border: 2px solid white;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+      .construction-timeline-text {
+        padding: 0;
+        margin: 0;
+        margin-top: 36px;
+        font: 500 16px/22px TT Travels;
+        color: #7a7a7a;
+        text-align: left;
+        letter-spacing: -0.32px;
+      }
+      .construction-timeline-info1 {
+        flex: 0 1 auto;
+        margin-left: 150px;
+      }
+      .house-check-message {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        margin-top: 36px;
+        font: 500 16px/22px TT Travels;
+        color: #7a7a7a;
+        text-align: left;
+        letter-spacing: -0.32px;
+      }
+      .project-button-container {
+        flex: 0 0 auto;
+        align-self: flex-end;
+        padding-bottom: 6px;
+      }
+      .project-button-style {
+        box-sizing: border-box;
+        display: block;
+        width: 145px;
+        min-width: 145px;
+        height: 64px;
+        font: 400 14px TT Travels;
+        color: white;
+        cursor: pointer;
+        background: #392e45;
+        border: none;
+        border-radius: 15px;
+      }
+      .vertical-card-container {
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        padding-right: 3px;
+        padding-left: 6px;
+        margin-top: 50px;
+      }
+      .horizontal-card-group {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        gap: 26px;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+      }
+      .mortgage-section-popular {
+        box-sizing: border-box;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+        max-width: initial;
+        height: 249px;
+        padding: 14px 335px 168px 14px;
+        background: url("assets/image_5269322e.png") 50% / cover no-repeat;
+        border: none;
+      }
+      .pink-box-with-text {
+        box-sizing: border-box;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 32px;
+        padding-right: 16px;
+        padding-left: 15px;
+        background: #fd257a;
+        border-radius: 10px;
+      }
+      .travel-heading {
+        flex: 0 0 auto;
+        padding: 0;
+        margin: 0;
+        font: 600 10px TT Travels;
+        color: white;
+      }
+      .popular-section-container {
+        box-sizing: border-box;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 32px;
+        padding-right: 8px;
+        padding-left: 9px;
+        margin-top: 3px;
+        background: white;
+        border-radius: 10px;
+      }
+      .popular-heading-text-style {
+        flex: 0 0 auto;
+        padding: 0;
+        margin: 0;
+        font: 600 10px TT Travels;
+        color: #101010;
+      }
+      .vertical-centered-container2 {
+        box-sizing: border-box;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+        max-width: initial;
+        height: 249px;
+        padding: 14px 335px 168px 14px;
+        background: url("assets/image_5c4c6d5.png") 50% / cover no-repeat;
+        border: none;
+      }
+      .vertical-centered-container1 {
+        box-sizing: border-box;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+        max-width: initial;
+        height: 249px;
+        padding: 14px 335px 168px 14px;
+        background: url("assets/image_527a63d3.png") 50% / cover no-repeat;
+        border: none;
+      }
+      .vertical-centered-container {
+        box-sizing: border-box;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+        max-width: initial;
+        height: 249px;
+        padding: 14px 335px 168px 14px;
+        background: url("assets/image_5d8116a9.png") 50% / cover no-repeat;
+        border: none;
+      }
+      .product-card-list {
+        display: flex;
+        flex-direction: row;
+        gap: 232px;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin-top: 16px;
+      }
+      .product-title {
+        padding: 0;
+        margin: 0;
+        font: 500 24px Manrope, sans-serif;
+        color: black;
+        letter-spacing: -0.48px;
+      }
+      .flex-price-alignment {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: flex-start;
+        margin-top: 1px;
+      }
+      .price-label {
+        flex: 0 0 auto;
+        padding: 0;
+        padding-top: 4px;
+        margin: 0;
+        font: 500 18px TT Travels;
+        color: black;
+        letter-spacing: -0.36px;
+      }
+      .price-block-text-style {
+        flex: 0 0 auto;
+        padding: 0;
+        margin: 0;
+        margin-left: 3.25px;
+        font: 500 22px TT Travels;
+        color: #fd257a;
+        letter-spacing: -0.44px;
+      }
+      .house-info-row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 30px;
+      }
+      .house-area-label {
+        flex: 0 0 auto;
+        padding: 0;
+        margin: 0;
+        font: 500 18px TT Travels;
+        color: #7a7a7a;
+        letter-spacing: -0.36px;
+      }
+      .house-area-text {
+        flex: 0 0 auto;
+        padding: 0;
+        margin: 0;
+        margin-left: 8.5px;
+        font: 500 20px TT Travels;
+        color: #101010;
+        letter-spacing: -0.4px;
+      }
+      .house-listing-container {
+        flex: 0 0 auto;
+        margin-top: 35px;
+      }
+      .vertical-centered-container3 {
+        box-sizing: border-box;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+        max-width: initial;
+        height: 249px;
+        padding: 14px 335px 168px 14px;
+        background: url("assets/image_a2dad096.png") 50% / cover no-repeat;
+        border: none;
+      }
+      .mortgage-promo-container2 {
+        box-sizing: border-box;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+        max-width: initial;
+        height: 249px;
+        padding: 14px 335px 168px 14px;
+        background: url("assets/image_b6f18c.png") 50% / cover no-repeat;
+        border: none;
+      }
+      .mortgage-promo-container1 {
+        box-sizing: border-box;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+        max-width: initial;
+        height: 249px;
+        padding: 14px 335px 168px 14px;
+        background: url("assets/image_1a4bc7b3.png") 50% / cover no-repeat;
+        border: none;
+      }
+      .mortgage-promo-container {
+        box-sizing: border-box;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+        max-width: initial;
+        height: 249px;
+        padding: 14px 335px 168px 14px;
+        background: url("assets/image_307d6f60.png") 50% / cover no-repeat;
+        border: none;
+      }
+      .classic-contact-section {
+        flex: 0 0 auto;
+        padding-right: 23px;
+        padding-left: 23px;
+        margin-top: 150px;
+      }
+      .flex-container-with-header-and-footer {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        justify-content: flex-start;
+        width: 100%;
+      }
+      .contact-info-container {
+        box-sizing: border-box;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        width: 92.86%;
+      }
+      .vertical-centered-flex-container {
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+      }
+      .classic-title {
+        flex: 0 0 auto;
+        padding: 0;
+        margin: 0;
+        font: 500 20px Manrope, sans-serif;
+        color: grey;
+      }
+      .classic-email-text-style {
+        flex: 0 0 auto;
+        padding: 0;
+        margin: 0;
+        margin-top: 16px;
+        font: 400 72px Manrope, sans-serif;
+        color: #de845a;
+        text-decoration-line: underline;
+        letter-spacing: -1.44px;
+      }
+      .vertical-centered-column {
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+        margin-left: 65px;
+      }
+      .chat-title-style {
+        flex: 0 0 auto;
+        padding: 0;
+        margin: 0;
+        margin-top: 16px;
+        font: 400 72px Manrope, sans-serif;
+        color: #2b65ab;
+        text-decoration-line: underline;
+        letter-spacing: -1.44px;
+      }
+      .feedback-container {
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+        margin-left: 181px;
+      }
+      .feedback-header-text-style {
+        flex: 0 0 auto;
+        padding: 0;
+        margin: 0;
+        margin-top: 16px;
+        font: 400 72px Manrope, sans-serif;
+        color: grey;
+        text-decoration-line: underline;
+        letter-spacing: -1.44px;
+      }
+      .sidebar-widget {
+        box-sizing: border-box;
+        flex: 0 0 auto;
+        width: 7.14%;
+        padding: 63px 15px 14px;
+      }
+      .dark-box {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        width: 64px;
+        background: #101010;
+        border-radius: 10px;
+      }
+      .vertical-centered-box {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+        width: 28px;
+        height: 64px;
+      }
+      .flex-box-image {
+        display: block;
+        flex: 0 0 auto;
+        max-width: initial;
+        height: 4px;
+      }
+      .hero-section3 {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 145px;
+      }
+      .hero-section2 {
+        box-sizing: border-box;
+        flex: 0 0 auto;
+        width: 416px;
+      }
+      .idea-box {
+        padding: 0;
+        margin: 0;
+        font: 500 20px Manrope, sans-serif;
+        color: grey;
+        text-align: left;
+      }
+      .test-button-style {
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        min-width: 415px;
+        height: 119px;
+        margin-top: 49px;
+        font: 500 28px TT Travels;
+        color: white;
+        letter-spacing: -0.56px;
+        cursor: pointer;
+        background: #101010;
+        border: none;
+        border-radius: 60px;
+      }
+      .vertical-layout-container {
+        box-sizing: border-box;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        min-width: 1103px;
+        padding-bottom: 26px;
+      }
+      .header-title {
+        flex: 0 0 auto;
+        align-self: flex-end;
+        padding: 0;
+        margin: 0;
+        font: 500 20px Manrope, sans-serif;
+        color: grey;
+      }
+      .header-nav {
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: row;
+        gap: 8px;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 104px;
+      }
+      .navigation-bar {
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: row;
+        gap: 158px;
+        align-items: center;
+        justify-content: flex-start;
+      }
+      .unique-card-text-styles {
+        flex: 0 0 auto;
+        padding: 0;
+        margin: 0;
+        font: 500 24px TT Travels;
+        color: #101010;
+      }
+      .home-photo-about-styles {
+        box-sizing: border-box;
+        display: block;
+        width: 67px;
+        max-width: initial;
+        height: 67px;
+      }
+    </style>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div style="display: inline-block; width: 1920px" data-ignore="used only for top most containter width">
+      <div class="hero-section">
+        <div class="main-content-section">
+          <div class="hero-section1">
+            <div class="svg-container">
+              <svg viewBox="0 0 32 32" x="0" y="0" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="Group" xmlns="http://www.w3.org/2000/svg">
+                  <path id="Vector" d="M15.124,3.5052c-0.401,0.0846 -0.882,0.28 -1.278,0.5072c-0.228,0.1321 -1.659,1.5322 -5.701,5.5686c-5.991,5.9753 -5.637,5.5844 -5.643,6.3135c0,0.4807 0.138,0.7872 0.502,1.1306c0.46,0.4279 1.152,0.5177 1.717,0.2272c0.201,-0.1057 1.506,-1.379 5.469,-5.3467c2.932,-2.9322 5.288,-5.2568 5.399,-5.315c0.111,-0.0528 0.296,-0.1003 0.412,-0.1003c0.116,0 0.301,0.0475 0.412,0.1003c0.111,0.0582 2.468,2.3828 5.4,5.315c3.962,3.9677 5.267,5.241 5.468,5.3467c0.565,0.2905 1.257,0.2007 1.717,-0.2272c0.354,-0.3329 0.502,-0.6499 0.502,-1.1042c0,-0.7133 0.047,-0.6499 -2.356,-3.0643l-2.161,-2.1714v-2.3828c0,-1.5797 -0.021,-2.4831 -0.058,-2.668c-0.159,-0.7291 -0.751,-1.2046 -1.501,-1.2046c-0.623,0 -1.13,0.3223 -1.41,0.8929c-0.111,0.2219 -0.122,0.3275 -0.138,1.2362l-0.021,0.9986l-1.696,-1.6854c-1.743,-1.7223 -1.944,-1.8914 -2.626,-2.1661c-0.686,-0.2747 -1.685,-0.3593 -2.409,-0.2008z" fill="currentColor" />
+                  <path id="Vector_2" d="M15.737,9.507c-0.159,0.0634 -9.325,9.2034 -9.436,9.4094c-0.063,0.1216 -0.074,0.7027 -0.074,3.6561c0,2.3299 0.021,3.6084 0.058,3.7933c0.153,0.7344 0.74,1.5269 1.4,1.8756c0.629,0.3328 0.64,0.3328 3.334,0.3328h2.446v-3.4341v-3.4341h2.536h2.536v3.4341v3.4341h2.446c2.695,0 2.705,0 3.334,-0.3328c0.66,-0.3487 1.247,-1.1412 1.4,-1.8756c0.037,-0.1849 0.058,-1.4634 0.058,-3.7933c0,-2.9534 -0.01,-3.5345 -0.074,-3.6561c-0.121,-0.2219 -9.283,-9.3513 -9.452,-9.4147c-0.179,-0.0634 -0.338,-0.0634 -0.512,0.0053z" fill="currentColor" />
+                </g>
+              </svg>
+            </div>
+            <p class="main-heading-text-style">ДОМ СТРОЙ</p>
+          </div>
+          <div class="horizontal-link-group">
+            <button class="home-title">Дома</button>
+            <button class="unique-card-info">Фото</button>
+            <button class="unique-card-info">Скидка</button>
+          </div>
+          <p class="contact-info-heading">+7 123 456 78 90</p>
+        </div>
+        <div class="project-card-container">
+          <div class="project-info-section">
+            <div class="project-popularity-section">
+              <p class="popular-projects-heading-style">
+                <span>Проекты, которые<br />пользуются <br /></span><span class="popular-heading-text-style1">популярностью</span>
+              </p>
+              <div class="construction-info-block">
+                <div class="construction-timeline-info">
+                  <img src="assets/image_c4e5302b.png" class="avatar-image-with-text" />
+                  <p class="construction-timeline-text">Строительство занимает от<br />2 недель до 4 месяцев</p>
+                </div>
+                <div class="construction-timeline-info1">
+                  <img src="assets/image_58b0ffbc.png" class="avatar-image-with-text" />
+                  <p class="house-check-message">Заселиться в дом можно сразу после завершения работ</p>
+                </div>
+              </div>
+            </div>
+            <div class="project-button-container">
+              <!-- Button Component is detected here -->
+              <button class="project-button-style">Все проекты</button>
+            </div>
+          </div>
+          <div class="vertical-card-container">
+            <div class="construction-timeline-info">
+              <div class="horizontal-card-group">
+                <div class="mortgage-section-popular">
+                  <div class="pink-box-with-text">
+                    <p class="travel-heading">% ИПОТЕКА</p>
+                  </div>
+                  <div class="popular-section-container">
+                    <p class="popular-heading-text-style">ПОПУЛЯРНЫЕ</p>
+                  </div>
+                </div>
+                <div class="vertical-centered-container2">
+                  <div class="pink-box-with-text">
+                    <p class="travel-heading">% ИПОТЕКА</p>
+                  </div>
+                  <div class="popular-section-container">
+                    <p class="popular-heading-text-style">ПОПУЛЯРНЫЕ</p>
+                  </div>
+                </div>
+                <div class="vertical-centered-container1">
+                  <div class="pink-box-with-text">
+                    <p class="travel-heading">% ИПОТЕКА</p>
+                  </div>
+                  <div class="popular-section-container">
+                    <p class="popular-heading-text-style">ПОПУЛЯРНЫЕ</p>
+                  </div>
+                </div>
+                <div class="vertical-centered-container">
+                  <div class="pink-box-with-text">
+                    <p class="travel-heading">% ИПОТЕКА</p>
+                  </div>
+                  <div class="popular-section-container">
+                    <p class="popular-heading-text-style">ПОПУЛЯРНЫЕ</p>
+                  </div>
+                </div>
+              </div>
+              <div class="product-card-list">
+                <div class="construction-timeline-info">
+                  <p class="product-title">ВудБрик ВБ-69</p>
+                  <div class="flex-price-alignment">
+                    <p class="price-label">от</p>
+                    <p class="price-block-text-style">7 554 000 ₽</p>
+                  </div>
+                  <div class="house-info-row">
+                    <p class="house-area-label">Площадь дома:</p>
+                    <p class="house-area-text">155,15 м2</p>
+                  </div>
+                </div>
+                <div class="construction-timeline-info">
+                  <p class="product-title">ВудБрик ВБ-75</p>
+                  <div class="flex-price-alignment">
+                    <p class="price-label">от</p>
+                    <p class="price-block-text-style">4 682 000 ₽</p>
+                  </div>
+                  <div class="house-info-row">
+                    <p class="house-area-label">Площадь дома:</p>
+                    <p class="house-area-text">155,15 м2</p>
+                  </div>
+                </div>
+                <div class="construction-timeline-info">
+                  <p class="product-title">ВудБрик ВБ-01</p>
+                  <div class="flex-price-alignment">
+                    <p class="price-label">от</p>
+                    <p class="price-block-text-style">7 225 000 ₽</p>
+                  </div>
+                  <div class="house-info-row">
+                    <p class="house-area-label">Площадь дома:</p>
+                    <p class="house-area-text">155,15 м2</p>
+                  </div>
+                </div>
+                <div class="construction-timeline-info">
+                  <p class="product-title">ВудБрик ВБ-37</p>
+                  <div class="flex-price-alignment">
+                    <p class="price-label">от</p>
+                    <p class="price-block-text-style">4 863 000 ₽</p>
+                  </div>
+                  <div class="house-info-row">
+                    <p class="house-area-label">Площадь дома:</p>
+                    <p class="house-area-text">155,15 м2</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="house-listing-container">
+              <div class="horizontal-card-group">
+                <div class="vertical-centered-container3">
+                  <div class="pink-box-with-text">
+                    <p class="travel-heading">% ИПОТЕКА</p>
+                  </div>
+                  <div class="popular-section-container">
+                    <p class="popular-heading-text-style">ПОПУЛЯРНЫЕ</p>
+                  </div>
+                </div>
+                <div class="mortgage-promo-container2">
+                  <div class="pink-box-with-text">
+                    <p class="travel-heading">% ИПОТЕКА</p>
+                  </div>
+                  <div class="popular-section-container">
+                    <p class="popular-heading-text-style">ПОПУЛЯРНЫЕ</p>
+                  </div>
+                </div>
+                <div class="mortgage-promo-container1">
+                  <div class="pink-box-with-text">
+                    <p class="travel-heading">% ИПОТЕКА</p>
+                  </div>
+                  <div class="popular-section-container">
+                    <p class="popular-heading-text-style">ПОПУЛЯРНЫЕ</p>
+                  </div>
+                </div>
+                <div class="mortgage-promo-container">
+                  <div class="pink-box-with-text">
+                    <p class="travel-heading">% ИПОТЕКА</p>
+                  </div>
+                  <div class="popular-section-container">
+                    <p class="popular-heading-text-style">ПОПУЛЯРНЫЕ</p>
+                  </div>
+                </div>
+              </div>
+              <div class="product-card-list">
+                <div class="construction-timeline-info">
+                  <p class="product-title">ВудБрик ВБ-59</p>
+                  <div class="flex-price-alignment">
+                    <p class="price-label">от</p>
+                    <p class="price-block-text-style">5 544 000 ₽</p>
+                  </div>
+                  <div class="house-info-row">
+                    <p class="house-area-label">Площадь дома:</p>
+                    <p class="house-area-text">155,15 м2</p>
+                  </div>
+                </div>
+                <div class="construction-timeline-info">
+                  <p class="product-title">ВудБрик ВБ-22</p>
+                  <div class="flex-price-alignment">
+                    <p class="price-label">от</p>
+                    <p class="price-block-text-style">3 649 000 ₽</p>
+                  </div>
+                  <div class="house-info-row">
+                    <p class="house-area-label">Площадь дома:</p>
+                    <p class="house-area-text">155,15 м2</p>
+                  </div>
+                </div>
+                <div class="construction-timeline-info">
+                  <p class="product-title">ВудБрик ВБ-43</p>
+                  <div class="flex-price-alignment">
+                    <p class="price-label">от</p>
+                    <p class="price-block-text-style">4 665 000 ₽</p>
+                  </div>
+                  <div class="house-info-row">
+                    <p class="house-area-label">Площадь дома:</p>
+                    <p class="house-area-text">155,15 м2</p>
+                  </div>
+                </div>
+                <div class="construction-timeline-info">
+                  <p class="product-title">ВудБрик ВБ-65</p>
+                  <div class="flex-price-alignment">
+                    <p class="price-label">от</p>
+                    <p class="price-block-text-style">3 223 000 ₽</p>
+                  </div>
+                  <div class="house-info-row">
+                    <p class="house-area-label">Площадь дома:</p>
+                    <p class="house-area-text">155,15 м2</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="classic-contact-section">
+            <div class="flex-container-with-header-and-footer">
+              <div class="contact-info-container">
+                <div class="vertical-centered-flex-container">
+                  <p class="classic-title">КЛАССИКА</p>
+                  <p class="classic-email-text-style">email@example.com</p>
+                </div>
+                <div class="vertical-centered-column">
+                  <p class="classic-title">ЧАТ</p>
+                  <p class="chat-title-style">telegram</p>
+                </div>
+                <div class="feedback-container">
+                  <p class="classic-title">ОБРАТНАЯ СВВЯЗЬ</p>
+                  <p class="feedback-header-text-style">e-mail / номер</p>
+                </div>
+              </div>
+              <div class="sidebar-widget">
+                <div class="dark-box">
+                  <div class="vertical-centered-box">
+                    <img src="assets/image_52b3d89a.png" class="flex-box-image" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hero-section3">
+              <div class="hero-section2">
+                <p class="idea-box">ТЗ - ВАШЕ, ИДЕИ - НАШИ,<br />ВОСХИЩЕНИЕ - ВСЕХ ОСТАЛЬНЫХ</p>
+                <!-- Button Component is detected here -->
+                <button class="test-button-style">Пройти тест</button>
+              </div>
+              <div class="vertical-layout-container">
+                <p class="header-title">ВВЕРХ</p>
+                <div class="header-nav">
+                  <div class="navigation-bar">
+                    <p class="unique-card-text-styles">Дома</p>
+                    <p class="unique-card-text-styles">Фото</p>
+                    <p class="unique-card-text-styles">О нас</p>
+                  </div>
+                  <img src="assets/image_a80b9a83.png" class="home-photo-about-styles" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

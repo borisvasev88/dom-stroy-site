@@ -288,8 +288,6 @@
       text-align: left;
       letter-spacing: -0.96px;
       white-space: pre-wrap;
-      hyphens: auto;
-      word-break: break-word;
     }
 
     .rapid-quality-section {
@@ -363,7 +361,6 @@
       max-width: initial;
       height: 398px;
       padding: 19px 34px 30px;
-      background: url("blob:https://app.kombai.com/7f5528e0-1ef0-43c6-86c4-f33ea5280a62") 50% / cover no-repeat;
       border: none;
     }
 
@@ -447,7 +444,6 @@
       padding-top: 50px;
       padding-right: 225px;
       padding-left: 39px;
-      background: url("blob:https://app.kombai.com/dff6df10-8d9b-42b2-8cbc-663aa51eda30") 50% / cover no-repeat;
     }
 
     .testimonial-text-style {
@@ -489,7 +485,6 @@
       padding-right: 212px;
       padding-left: 35px;
       margin-left: 12px;
-      background: url("blob:https://app.kombai.com/9007e3fa-92f4-4f51-b933-8f2f0ea13434") 50% / cover no-repeat;
     }
 
     .custom-project-heading-style {
@@ -527,7 +522,6 @@
       height: 529px;
       padding: 50px 208px 30px 34px;
       margin-left: 16px;
-      background: url("blob:https://app.kombai.com/7358bd02-b911-4b46-81ce-a24d350da2e5") 50% / cover no-repeat;
     }
 
     .construction-details-container {
@@ -1341,119 +1335,113 @@
         opacity: 1;
       }
     }
-
     /* Стили для модального окна */
-    .modal-toggle {
-      display: none;
-    }
+.modal-toggle {
+  display: none;
+}
 
-    .modal-overlay {
-      display: none;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.7);
-      z-index: 1000;
-    }
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+}
 
-    .modal {
-      display: none;
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      z-index: 1001;
-      width: 90%;
-      max-width: 600px;
-      background: white;
-      border-radius: 15px;
-      padding: 30px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-    }
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1001;
+  width: 90%;
+  max-width: 600px;
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
 
-    .modal-content {
-      text-align: center;
-    }
+.modal-content {
+  text-align: center;
+}
 
-    .modal-close {
-      position: absolute;
-      top: 15px;
-      right: 15px;
-      font-size: 24px;
-      cursor: pointer;
-      color: #666;
-    }
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #666;
+}
 
-    .modal-close:hover {
-      color: #000;
-    }
+.modal-close:hover {
+  color: #000;
+}
 
-    h2 {
-      font-size: 28px;
-      margin-bottom: 20px;
-      color: #333;
-    }
+h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
 
-    p {
-      font-size: 16px;
-      color: #666;
-      margin-bottom: 30px;
-    }
+p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 30px;
+}
 
-    .question {
-      margin-bottom: 30px;
-      text-align: left;
-    }
+.question {
+  margin-bottom: 30px;
+  text-align: left;
+}
 
-    .question h3 {
-      font-size: 20px;
-      color: #333;
-      margin-bottom: 15px;
-    }
+.question h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 15px;
+}
 
-    .options {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 
-    .option-button {
-      padding: 15px;
-      background: #f0f0f0;
-      border: none;
-      border-radius: 10px;
-      font-size: 16px;
-      color: #333;
-      cursor: pointer;
-      transition: background 0.3s ease;
-    }
+.option-button {
+  padding: 15px;
+  background: #f0f0f0;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
 
-    .option-button:hover {
-      background: #e0e0e0;
-    }
+.option-button:hover {
+  background: #e0e0e0;
+}
 
-    .card-button:hover {
-      background: #2a2233;
-    }
+.card-button:hover {
+  background: #2a2233;
+}
 
-    /* Показываем модальное окно при активации чекбокса */
-    .modal-toggle:checked~.modal-overlay,
-    .modal-toggle:checked~.modal {
-      display: block;
-      animation: fadeIn 0.3s;
-    }
+/* Показываем модальное окно при активации чекбокса */
+.modal-toggle:checked ~ .modal-overlay,
+.modal-toggle:checked ~ .modal {
+  display: block;
+  animation: fadeIn 0.3s;
+}
 
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-      }
-
-      to {
-        opacity: 1;
-      }
-    }
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
   </style>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
@@ -1485,7 +1473,13 @@
         </div>
       </div>
 
-      <label for="modal-toggle" class="card-button">Сохранить</label>
+      <label for="modal-toggle" class="card-button" id="save-button">Сохранить</label>
+
+      <script>
+        document.getElementById('save-button').addEventListener('click', function() {
+            window.location.href = 'portfolio.html';
+        });
+    </script>
     </div>
   </div>
 

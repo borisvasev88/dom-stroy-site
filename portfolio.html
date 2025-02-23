@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500" />
+
+    <meta charset="UTF-8" />
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="x-apple-disable-message-reformatting" />
+
+    <style>
+      .hero-section4 {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        min-width: 1920px;
+        padding: 31.5px 27px 70px;
+        background: white;
+      }
+      .horizontal-layout-container {
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: row;
+        gap: 540px;
+        align-items: center;
+        align-self: center;
+        justify-content: flex-start;
+      }
+      .hero-section2 {
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: flex-start;
+      }
+      .svg-container {
+        display: flex;
+        flex: 0 0 auto;
+        width: 32px;
+        height: 32px;
+        color: #101010;
+      }
+      .main-heading-text-style {
+        flex: 0 0 auto;
+        padding: 0;
+        padding-top: 7.5px;
+        margin: 0;
+        margin-left: 8.5px;
+        font: 800 24px Proxima Nova;
+        color: #101010;
+      }
+      .horizontal-menu {
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: row;
+        gap: 48px;
+        align-items: center;
+        justify-content: flex-start;
+      }
+      .promo-text {
+        flex: 0 0 auto;
+        padding: 0;
+        margin: 0;
+        font: 500 18px TT Travels;
+        color: #101010;
+      }
+      .highlighted-text {
+        flex: 0 0 auto;
+        padding: 0;
+        margin: 0;
+        font: 500 18px TT Travels;
+        color: #101010;
+        text-decoration-line: underline;
+      }
+      .contact-info-heading {
+        flex: 0 0 auto;
+        padding: 0;
+        margin: 0;
+        font: 400 24px TT Travels;
+        color: #101010;
+      }
+      .project-portfolio-container {
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        margin-top: 108px;
+      }
+      .project-portfolio-section {
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+      }
+      .house-details-container3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+      }
+      .portfolio-heading {
+        flex: 0 0 auto;
+        padding: 0;
+        margin: 0;
+        font: 500 48px/45px Manrope, sans-serif;
+        color: black;
+        letter-spacing: -0.96px;
+      }
+      .project-description-style {
+        flex: 0 0 auto;
+        padding: 0;
+        margin: 0;
+        margin-top: 17px;
+        font: 500 15px TT Travels;
+        color: #373737;
+        letter-spacing: -0.3px;
+      }
+      .project-card-container {
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: row;
+        gap: 25px;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-top: 27px;
+      }
+      .project-card {
+        box-sizing: border-box;
+        flex: 0 0 auto;
+        width: 606px;
+      }
+      .project-info-container3 {
+        box-sizing: border-box;
+        width: 100%;
+      }
+      .property-card {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        width: 100%;
+      }
+      .house-image-container {
+        box-sizing: border-box;
+        display: block;
+        flex: 0 0 auto;
+        max-width: initial;
+        height: 340px;
+        border: none;
+        object-fit: cover;
+      }
+      .house-details-container7 {
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 17px;
+      }
+      .house-details-heading {
+        flex: 0 0 auto;
+        padding: 0;
+        margin: 0;
+        font: 500 32px Manrope, sans-serif;
+        color: #373737;
+        letter-spacing: -0.64px;
+      }
+      .house-details-container1 {
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        gap: 6px;
+        align-items: center;
+        justify-content: flex-start;
+        padding-right: 9.5px;
+        padding-left: 9px;
+        margin-top: 16px;
+      }
+      .flex-container-with-text-aligned-left {
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+      }
+      .property-description-style {
+        flex: 0 0 auto;
+        padding: 0;
+        margin: 0;
+        font: 500 16px TT Travels;
+        color: #7a7a7a;
+        letter-spacing: -0.32px;
+      }
+      .house-details-text {
+        flex: 0 0 auto;
+        padding: 0;
+        margin: 0;
+        margin-left: 8.5px;
+        font: 500 18px TT Travels;
+        color: #101010;
+        letter-spacing: -0.36px;
+      }
+      .project-description-container1 {
+        box-sizing: border-box;
+        width: 100%;
+        padding-right: 3px;
+        margin-top: 66px;
+      }
+      .project-description-container {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        padding-left: 4.75px;
+        background: #ededf2;
+        border-radius: 10px;
+      }
+      .project-description-container2 {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 59px;
+      }
+      .project-description-text-style {
+        flex: 0 0 auto;
+        padding: 0;
+        margin: 0;
+        font: 500 18px TT Travels;
+        color: #101010;
+        letter-spacing: -0.36px;
+      }
+      .house-details-container {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        width: 100%;
+        margin-top: 56px;
+      }
+      .house-details-container6 {
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding-right: 9.5px;
+        margin-top: 17px;
+      }
+      .vertical-align-bottom-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-start;
+      }
+      .house-details-container5 {
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        gap: 6px;
+        align-items: center;
+        justify-content: flex-start;
+        padding-left: 4px;
+        margin-top: 16px;
+      }
+      .center-aligned-text-container {
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+      }
+      .location-details {
+        flex: 0 0 auto;
+        padding: 0;
+        margin: 0;
+        margin-left: -5.75px;
+        font: 500 16px TT Travels;
+        color: #7a7a7a;
+        letter-spacing: -0.32px;
+      }
+      .project-details-container {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+      }
+      .project-title-style {
+        flex: 0 0 auto;
+        align-self: center;
+        padding: 0;
+        margin: 0;
+        font: 500 32px Manrope, sans-serif;
+        color: #373737;
+        letter-spacing: -0.64px;
+      }
+      .project-details-container1 {
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 16px;
+      }
+      .house-details-container2 {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        align-items: center;
+        justify-content: flex-start;
+      }
+      .project-info-container {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        padding-left: 4.75px;
+        margin-top: 66px;
+        background: #ededf2;
+        border-radius: 10px;
+      }
+      .info-card {
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        gap: 6px;
+        align-items: center;
+        justify-content: flex-start;
+        padding-right: 13.5px;
+        padding-left: 4px;
+        margin-top: 16px;
+      }
+      .project-info-container1 {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        padding-left: 4.75px;
+        margin-top: 10px;
+        background: #ededf2;
+        border-radius: 10px;
+      }
+      .project-card-container1 {
+        box-sizing: border-box;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        gap: 56px;
+        align-items: stretch;
+        justify-content: flex-start;
+        width: 606px;
+      }
+      .property-card1 {
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+      }
+      .location-info-container {
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        margin-left: -5px;
+      }
+      .property-details-heading {
+        flex: 0 0 auto;
+        padding: 0;
+        margin: 0;
+        margin-left: -5px;
+        font: 500 16px TT Travels;
+        color: #7a7a7a;
+        letter-spacing: -0.32px;
+      }
+      .project-info-container4 {
+        box-sizing: border-box;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        padding-left: 4.75px;
+        margin-top: 66px;
+        background: #ededf2;
+        border-radius: 10px;
+      }
+      .house-details-container8 {
+        box-sizing: border-box;
+        min-width: 218px;
+      }
+      .house-details-heading1 {
+        padding: 0;
+        margin: 0;
+        font: 500 32px Manrope, sans-serif;
+        color: #373737;
+        letter-spacing: -0.64px;
+      }
+      .house-details-container4 {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        align-items: center;
+        justify-content: flex-start;
+        padding-left: 4px;
+        margin-top: 16px;
+      }
+      .location-info-container1 {
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-left: 6px;
+      }
+      .project-info-container2 {
+        box-sizing: border-box;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        padding-left: 4.75px;
+        margin-top: 10px;
+        background: #ededf2;
+        border-radius: 10px;
+      }
+      .hero-section5 {
+        flex: 0 0 auto;
+        padding-right: 18px;
+        padding-left: 18px;
+        margin-top: 150px;
+      }
+      .hero-section1 {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+      }
+      .vertical-center-column {
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+      }
+      .classic-title {
+        flex: 0 0 auto;
+        padding: 0;
+        margin: 0;
+        font: 500 20px Manrope, sans-serif;
+        color: grey;
+      }
+      .classic-email-text-style {
+        flex: 0 0 auto;
+        padding: 0;
+        margin: 0;
+        margin-top: 16px;
+        font: 400 72px Manrope, sans-serif;
+        color: #de845a;
+        text-decoration-line: underline;
+        letter-spacing: -1.44px;
+      }
+      .contact-info-container {
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+        margin-left: 65px;
+      }
+      .chat-title-text-style {
+        flex: 0 0 auto;
+        padding: 0;
+        margin: 0;
+        margin-top: 16px;
+        font: 400 72px Manrope, sans-serif;
+        color: #2b65ab;
+        text-decoration-line: underline;
+        letter-spacing: -1.44px;
+      }
+      .feedback-section {
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+        margin-left: 181px;
+      }
+      .feedback-title {
+        flex: 0 0 auto;
+        padding: 0;
+        margin: 0;
+        margin-top: 16px;
+        font: 400 72px Manrope, sans-serif;
+        color: grey;
+        text-decoration-line: underline;
+        letter-spacing: -1.44px;
+      }
+      .contact-info-container1 {
+        flex: 0 0 auto;
+        padding-top: 63px;
+        margin-left: 49px;
+      }
+      .dark-box-with-text {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+        width: 64px;
+        padding-right: 18px;
+        padding-left: 18px;
+        background: #101010;
+        border-radius: 10px;
+      }
+      .flex-box-image-container {
+        display: block;
+        flex: 0 0 auto;
+        max-width: initial;
+        height: 4px;
+      }
+      .hero-section {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 145px;
+      }
+      .hero-section3 {
+        box-sizing: border-box;
+        flex: 0 0 auto;
+        width: 416px;
+      }
+      .idea-text-display-style {
+        padding: 0;
+        margin: 0;
+        font: 500 20px Manrope, sans-serif;
+        color: grey;
+        text-align: left;
+      }
+      .test-button-style {
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        min-width: 415px;
+        height: 119px;
+        margin-top: 49px;
+        font: 500 28px TT Travels;
+        color: white;
+        letter-spacing: -0.56px;
+        cursor: pointer;
+        background: #101010;
+        border: none;
+        border-radius: 60px;
+      }
+      .vertical-flex-container {
+        box-sizing: border-box;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        min-width: 1103px;
+        padding-bottom: 26px;
+      }
+      .header-title {
+        flex: 0 0 auto;
+        align-self: flex-end;
+        padding: 0;
+        margin: 0;
+        font: 500 20px Manrope, sans-serif;
+        color: grey;
+      }
+      .header-nav {
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: row;
+        gap: 8px;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 104px;
+      }
+      .navigation-bar {
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: row;
+        gap: 158px;
+        align-items: center;
+        justify-content: flex-start;
+      }
+      .main-navigation-link {
+        flex: 0 0 auto;
+        padding: 0;
+        margin: 0;
+        font: 500 24px TT Travels;
+        color: #101010;
+      }
+      .home-photo-about-styles {
+        box-sizing: border-box;
+        display: block;
+        width: 67px;
+        max-width: initial;
+        height: 67px;
+      }
+    </style>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div style="display: inline-block; width: 1920px" data-ignore="used only for top most containter width">
+      <div class="hero-section4">
+        <div class="horizontal-layout-container">
+          <div class="hero-section2">
+            <div class="svg-container">
+              <svg viewBox="0 0 32 32" x="0" y="0" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="Group" xmlns="http://www.w3.org/2000/svg">
+                  <path id="Vector" d="M15.124,3.5052c-0.401,0.0846 -0.882,0.28 -1.278,0.5072c-0.228,0.1321 -1.659,1.5322 -5.701,5.5686c-5.991,5.9753 -5.637,5.5844 -5.643,6.3135c0,0.4807 0.138,0.7872 0.502,1.1306c0.46,0.4279 1.152,0.5177 1.717,0.2272c0.201,-0.1057 1.506,-1.379 5.469,-5.3467c2.932,-2.9322 5.288,-5.2568 5.399,-5.315c0.111,-0.0528 0.296,-0.1003 0.412,-0.1003c0.116,0 0.301,0.0475 0.412,0.1003c0.111,0.0582 2.468,2.3828 5.4,5.315c3.962,3.9677 5.267,5.241 5.468,5.3467c0.565,0.2905 1.257,0.2007 1.717,-0.2272c0.354,-0.3329 0.502,-0.6499 0.502,-1.1042c0,-0.7133 0.047,-0.6499 -2.356,-3.0643l-2.161,-2.1714v-2.3828c0,-1.5797 -0.021,-2.4831 -0.058,-2.668c-0.159,-0.7291 -0.751,-1.2046 -1.501,-1.2046c-0.623,0 -1.13,0.3223 -1.41,0.8929c-0.111,0.2219 -0.122,0.3275 -0.138,1.2362l-0.021,0.9986l-1.696,-1.6854c-1.743,-1.7223 -1.944,-1.8914 -2.626,-2.1661c-0.686,-0.2747 -1.685,-0.3593 -2.409,-0.2008z" fill="currentColor" />
+                  <path id="Vector_2" d="M15.737,9.507c-0.158,0.0634 -9.325,9.2034 -9.436,9.4094c-0.063,0.1216 -0.074,0.7027 -0.074,3.6561c0,2.3299 0.021,3.6084 0.058,3.7933c0.154,0.7344 0.74,1.5269 1.4,1.8756c0.629,0.3328 0.64,0.3328 3.334,0.3328h2.446v-3.4341v-3.4341h2.536h2.536v3.4341v3.4341h2.446c2.695,0 2.705,0 3.334,-0.3328c0.661,-0.3487 1.247,-1.1412 1.4,-1.8756c0.037,-0.1849 0.058,-1.4634 0.058,-3.7933c0,-2.9534 -0.01,-3.5345 -0.074,-3.6561c-0.121,-0.2219 -9.282,-9.3513 -9.451,-9.4147c-0.18,-0.0634 -0.338,-0.0634 -0.513,0.0053z" fill="currentColor" />
+                </g>
+              </svg>
+            </div>
+            <p class="main-heading-text-style">ДОМ СТРОЙ</p>
+          </div>
+          <div class="horizontal-menu">
+            <button class="promo-text" onclick="window.location.href = 'prices.html';">Дома</button>
+            <button class="promo-text">Фото</button>
+            <button class="promo-text">Скидка</button>
+          </div>
+          <p class="contact-info-heading">+7 123 456 78 90</p>
+        </div>
+        <div class="project-portfolio-container">
+          <div class="project-portfolio-section">
+            <div class="house-details-container3">
+              <p class="portfolio-heading">Портфолио проектов</p>
+              <p class="project-description-style">Реализовано более 200 уникальных проектов</p>
+            </div>
+          </div>
+          <div class="project-card-container">
+            <div class="project-card">
+              <div class="project-info-container3">
+                <div class="property-card">
+                  <img src="assets/image_5979fe57.png" class="house-image-container" />
+                  <div class="house-details-container7">
+                    <div class="house-details-container3">
+                      <p class="house-details-heading">ВудБрик ВБ-207</p>
+                      <div class="house-details-container1">
+                        <div class="flex-container-with-text-aligned-left">
+                          <p class="property-description-style">Место:</p>
+                          <p class="house-details-text">Пермский край</p>
+                        </div>
+                        <div class="flex-container-with-text-aligned-left">
+                          <p class="property-description-style">Площадь дома:</p>
+                          <p class="house-details-text">104,72 м2</p>
+                        </div>
+                        <p class="property-description-style">Этажей: 2</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="project-description-container1">
+                  <div class="project-description-container">
+                    <div class="project-description-container2">
+                      <p class="project-description-text-style">О проекте</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="house-details-container">
+                <img src="assets/image_55d4b1ba.png" class="house-image-container" />
+                <div class="house-details-container6">
+                  <div class="vertical-align-bottom-container">
+                    <p class="house-details-heading">ВудБрик ВБ-117</p>
+                    <div class="house-details-container5">
+                      <div class="center-aligned-text-container">
+                        <p class="property-description-style">Место:</p>
+                        <p class="house-details-text">Челябинск</p>
+                      </div>
+                      <div class="flex-container-with-text-aligned-left">
+                        <p class="property-description-style">Площадь дома:</p>
+                        <p class="house-details-text">114,72 м2</p>
+                      </div>
+                      <p class="location-details">Этажей: 1</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="project-description-container1">
+                <div class="project-description-container">
+                  <div class="project-description-container2">
+                    <p class="project-description-text-style">О проекте</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-card">
+              <div class="project-info-container3">
+                <div class="property-card">
+                  <img src="assets/image_cf76bd1.png" class="house-image-container" />
+                  <div class="house-details-container7">
+                    <div class="project-details-container">
+                      <p class="project-title-style">Индивидуальный проект</p>
+                      <div class="project-details-container1">
+                        <div class="house-details-container2">
+                          <div class="flex-container-with-text-aligned-left">
+                            <p class="property-description-style">Место:</p>
+                            <p class="house-details-text">Омск</p>
+                          </div>
+                          <div class="flex-container-with-text-aligned-left">
+                            <p class="property-description-style">Площадь дома:</p>
+                            <p class="house-details-text">95,3 м2</p>
+                          </div>
+                          <p class="property-description-style">Этажей: 1</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="project-info-container">
+                  <div class="project-description-container2">
+                    <p class="project-description-text-style">О проекте</p>
+                  </div>
+                </div>
+              </div>
+              <div class="house-details-container">
+                <img src="assets/image_4a8fec22.png" class="house-image-container" />
+                <div class="house-details-container7">
+                  <div class="house-details-container3">
+                    <p class="house-details-heading">ВудБрик Вб-178</p>
+                    <div class="info-card">
+                      <div class="center-aligned-text-container">
+                        <p class="property-description-style">Место:</p>
+                        <p class="house-details-text">Тюмень</p>
+                      </div>
+                      <div class="flex-container-with-text-aligned-left">
+                        <p class="property-description-style">Площадь дома:</p>
+                        <p class="house-details-text">95,3 м2</p>
+                      </div>
+                      <p class="property-description-style">Этажей: 1</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="project-info-container1">
+                <div class="project-description-container2">
+                  <p class="project-description-text-style">О проекте</p>
+                </div>
+              </div>
+            </div>
+            <div class="project-card-container1">
+              <div class="property-card1">
+                <div class="property-card1">
+                  <img src="assets/image_b87fc879.png" class="house-image-container" />
+                  <div class="house-details-container7">
+                    <div class="house-details-container3">
+                      <p class="house-details-heading">ВудБрик ВБ-112</p>
+                      <div class="house-details-container1">
+                        <div class="location-info-container">
+                          <p class="property-description-style">Место:</p>
+                          <p class="house-details-text">Химки</p>
+                        </div>
+                        <div class="flex-container-with-text-aligned-left">
+                          <p class="property-description-style">Площадь дома:</p>
+                          <p class="house-details-text">88,15 м2</p>
+                        </div>
+                        <p class="property-details-heading">Этажей: 1</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="project-info-container4">
+                  <div class="project-description-container2">
+                    <p class="project-description-text-style">О проекте</p>
+                  </div>
+                </div>
+              </div>
+              <div class="property-card1">
+                <img src="assets/image_db340635.png" class="house-image-container" />
+                <div class="house-details-container6">
+                  <div class="house-details-container8">
+                    <p class="house-details-heading1">ВудБрик ВБ-12</p>
+                    <div class="house-details-container4">
+                      <div class="location-info-container1">
+                        <p class="property-description-style">Место:</p>
+                        <p class="house-details-text">Самара</p>
+                      </div>
+                      <div class="flex-container-with-text-aligned-left">
+                        <p class="property-description-style">Площадь дома:</p>
+                        <p class="house-details-text">155,15 м2</p>
+                      </div>
+                      <p class="location-details">Этажей: 2</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="project-info-container2">
+                <div class="project-description-container2">
+                  <p class="project-description-text-style">О проекте</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-section5">
+          <div class="hero-section1">
+            <div class="flex-container-with-text-aligned-left">
+              <div class="vertical-center-column">
+                <p class="classic-title">КЛАССИКА</p>
+                <p class="classic-email-text-style">email@example.com</p>
+              </div>
+              <div class="contact-info-container">
+                <p class="classic-title">ЧАТ</p>
+                <p class="chat-title-text-style">telegram</p>
+              </div>
+              <div class="feedback-section">
+                <p class="classic-title">ОБРАТНАЯ СВВЯЗЬ</p>
+                <p class="feedback-title">e-mail / номер</p>
+              </div>
+            </div>
+            <div class="contact-info-container1">
+              <div class="dark-box-with-text">
+                <img src="assets/image_52b3d89a.png" class="flex-box-image-container" />
+              </div>
+            </div>
+          </div>
+          <div class="hero-section">
+            <div class="hero-section3">
+              <p class="idea-text-display-style">ТЗ - ВАШЕ, ИДЕИ - НАШИ,<br />ВОСХИЩЕНИЕ - ВСЕХ ОСТАЛЬНЫХ</p>
+              <button class="test-button-style">Пройти тест</button>
+            </div>
+            <div class="vertical-flex-container">
+              <p class="header-title">ВВЕРХ</p>
+              <div class="header-nav">
+                <div class="navigation-bar">
+                  <p class="main-navigation-link">Дома</p>
+                  <p class="main-navigation-link">Фото</p>
+                  <p class="main-navigation-link">О нас</p>
+                </div>
+                <img src="assets/image_a80b9a83.png" class="home-photo-about-styles" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
