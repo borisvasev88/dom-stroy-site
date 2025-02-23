@@ -2,17 +2,10 @@
 <html>
   <head>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500" />
-
     <meta charset="UTF-8" />
-
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-
-    <!--[if !mso]><!-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <!--<![endif]-->
-
     <meta name="x-apple-disable-message-reformatting" />
 
     <style>
@@ -141,6 +134,10 @@
       .construction-timeline-info {
         flex: 0 0 auto;
       }
+      .construction-timeline-info2 {
+        flex: 0 0 auto;
+        margin-left: 25px;
+      }
       .avatar-image-with-text {
         box-sizing: border-box;
         display: block;
@@ -162,7 +159,11 @@
       }
       .construction-timeline-info1 {
         flex: 0 1 auto;
-        margin-left: 150px;
+        margin-left: 40px;
+      }
+      .construction-timeline-info2 {
+        flex: 0 1 auto;
+        margin-left: 45px;
       }
       .house-check-message {
         box-sizing: border-box;
@@ -323,9 +324,8 @@
       .flex-price-alignment {
         display: flex;
         flex-direction: row;
-        align-items: flex-end;
-        justify-content: flex-start;
-        margin-top: 1px;
+        align-content: center;
+        padding-right: 10px;
       }
       .price-label {
         flex: 0 0 auto;
@@ -630,7 +630,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-    <div style="display: inline-block; width: 1920px" data-ignore="used only for top most containter width">
+    <div data-ignore="used only for top most containter width">
       <div class="hero-section">
         <div class="main-content-section">
           <div class="hero-section1">
@@ -662,14 +662,13 @@
                   <img src="assets/image_c4e5302b.png" class="avatar-image-with-text" />
                   <p class="construction-timeline-text">Строительство занимает от<br />2 недель до 4 месяцев</p>
                 </div>
-                <div class="construction-timeline-info1">
+                <div class="construction-timeline-info">
                   <img src="assets/image_58b0ffbc.png" class="avatar-image-with-text" />
                   <p class="house-check-message">Заселиться в дом можно сразу после завершения работ</p>
                 </div>
               </div>
             </div>
             <div class="project-button-container">
-              <!-- Button Component is detected here -->
               <button class="project-button-style">Все проекты</button>
             </div>
           </div>
@@ -721,7 +720,7 @@
                     <p class="house-area-text">155,15 м2</p>
                   </div>
                 </div>
-                <div class="construction-timeline-info">
+                <div class="construction-timeline-info1">
                   <p class="product-title">ВудБрик ВБ-75</p>
                   <div class="flex-price-alignment">
                     <p class="price-label">от</p>
@@ -732,7 +731,7 @@
                     <p class="house-area-text">155,15 м2</p>
                   </div>
                 </div>
-                <div class="construction-timeline-info">
+                <div class="construction-timeline-info2">
                   <p class="product-title">ВудБрик ВБ-01</p>
                   <div class="flex-price-alignment">
                     <p class="price-label">от</p>
@@ -743,7 +742,7 @@
                     <p class="house-area-text">155,15 м2</p>
                   </div>
                 </div>
-                <div class="construction-timeline-info">
+                <div class="construction-timeline-info2">
                   <p class="product-title">ВудБрик ВБ-37</p>
                   <div class="flex-price-alignment">
                     <p class="price-label">от</p>
@@ -792,17 +791,7 @@
                 </div>
               </div>
               <div class="product-card-list">
-                <div class="construction-timeline-info">
-                  <p class="product-title">ВудБрик ВБ-59</p>
-                  <div class="flex-price-alignment">
-                    <p class="price-label">от</p>
-                    <p class="price-block-text-style">5 544 000 ₽</p>
-                  </div>
-                  <div class="house-info-row">
-                    <p class="house-area-label">Площадь дома:</p>
-                    <p class="house-area-text">155,15 м2</p>
-                  </div>
-                </div>
+                
                 <div class="construction-timeline-info">
                   <p class="product-title">ВудБрик ВБ-22</p>
                   <div class="flex-price-alignment">
@@ -814,7 +803,7 @@
                     <p class="house-area-text">155,15 м2</p>
                   </div>
                 </div>
-                <div class="construction-timeline-info">
+                <div class="construction-timeline-info1">
                   <p class="product-title">ВудБрик ВБ-43</p>
                   <div class="flex-price-alignment">
                     <p class="price-label">от</p>
@@ -825,11 +814,22 @@
                     <p class="house-area-text">155,15 м2</p>
                   </div>
                 </div>
-                <div class="construction-timeline-info">
+                <div class="construction-timeline-info2">
                   <p class="product-title">ВудБрик ВБ-65</p>
                   <div class="flex-price-alignment">
                     <p class="price-label">от</p>
                     <p class="price-block-text-style">3 223 000 ₽</p>
+                  </div>
+                  <div class="house-info-row">
+                    <p class="house-area-label">Площадь дома:</p>
+                    <p class="house-area-text">155,15 м2</p>
+                  </div>
+                </div>
+                <div class="construction-timeline-info2">
+                  <p class="product-title">ВудБрик ВБ-66</p>
+                  <div class="flex-price-alignment">
+                    <p class="price-label">от</p>
+                    <p class="price-block-text-style">4 223 000 ₽</p>
                   </div>
                   <div class="house-info-row">
                     <p class="house-area-label">Площадь дома:</p>
@@ -866,7 +866,6 @@
             <div class="hero-section3">
               <div class="hero-section2">
                 <p class="idea-box">ТЗ - ВАШЕ, ИДЕИ - НАШИ,<br />ВОСХИЩЕНИЕ - ВСЕХ ОСТАЛЬНЫХ</p>
-                <!-- Button Component is detected here -->
                 <button class="test-button-style">Пройти тест</button>
               </div>
               <div class="vertical-layout-container">
